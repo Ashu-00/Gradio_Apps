@@ -2,21 +2,12 @@ import gradio as gr
 import arxiv
 import fitz
 
-# from langchain import LLMChain, PromptTemplate
-# from langchain.llms import Groq
-# from langchain.embeddings import HuggingFaceEmbeddings
-# from langchain.vectorstores import FAISS
-# from langchain.text_splitter import RecursiveCharacterTextSplitter
-
 # Set up Groq API (replace with your actual API key)
 from groq import Groq
 
 groq_api_key = "<Your-api-key>"
 gclient = Groq(api_key=groq_api_key)
 
-# Set up embedding model and vector store
-"""embeddings = HuggingFaceEmbeddings()
-vector_store = FAISS.from_texts([], embeddings)"""
 
 
 client = arxiv.Client()
